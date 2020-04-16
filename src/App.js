@@ -4,8 +4,10 @@ import Slider from "./components/slider";
 import Textos from "./components/textos";
 import Banner from "./components/banner";
 import Contacto from "./components/contacto";
+import Pie from "./components/pie";
 import SliderGrupos from "./components/sliderGrupos";
 import "./variables.css";
+
 export default class App extends Component {
   render() {
     return (
@@ -30,6 +32,9 @@ export default class App extends Component {
         </div>
         <div>
           <Contacto/>
+        </div>
+        <div>
+          <Pie/>
         </div>
       </Fragment>
     );

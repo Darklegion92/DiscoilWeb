@@ -9,14 +9,8 @@ export default class index extends Component {
           <Form.Control type="email" placeholder="tucorreo@tudominio.com" />
         </Form.Group>
         <Form.Group controlId="exampleForm.ControlSelect1">
-          <Form.Label>Asunto*</Form.Label>
-          <Form.Control as="select">
-            <option>Seleccione..</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </Form.Control>
+          <Form.Label>Nombre de Contacto*</Form.Label>
+         <Form.Control type="text" placeholder="" />
         </Form.Group>
         <Form.Group controlId="exampleForm.ControlTextarea1">
           <Form.Label>Mensaje*</Form.Label>

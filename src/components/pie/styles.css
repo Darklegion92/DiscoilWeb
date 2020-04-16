@@ -1,0 +1,14 @@
+.icons-redes{
+    display: flex;
+    background-color: var(--color-primario);
+    color:var(--color-secundario);
+    padding: 1% 35%;
+    justify-content: space-around;
+}
+.textos-pie{
+    background-color: var(--color-primario);
+    color:var(--color-secundario);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}

@@ -1,17 +1,34 @@
 .contacto-general {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 20px;
 }
 
 .mapa{
     flex: 1;
-    max-width: 50%;
+    max-width: 100%;
     padding: 20px;
 }
 
 .formulario{
     flex: 1;
-    max-width: 50%;
+    max-width: 100%;
     padding: 20px;
 }
+
+@media (min-width: 700px) {
+    .contacto-general {
+        flex-direction: row;
+    }
+    .mapa{
+        flex: 1;
+        max-width: 50%;
+        padding: 20px;
+    }
+    
+    .formulario{
+        flex: 1;
+        max-width: 50%;
+        padding: 20px;
+    }
+  }

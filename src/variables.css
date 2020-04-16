@@ -1,32 +1,36 @@
 :root {
-    --color-primario: #052096;
-    --color-secundario: white;
-    --color-terciario: #b9b9b6;
-    --fuente-principal: "Lato", sans-serif;
-  }
+  --color-primario: #052096;
+  --color-secundario: white;
+  --color-terciario: #b9b9b6;
+  --fuente-principal: "Lato", sans-serif;
+}
 
-.inicial{
+.inicial {
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 1rem 3rem 10rem;
-
 }
-.inicial-slider{
-   margin-top: 60px;
-  
+.inicial-slider {
+  margin-top: 60px;
 }
-.inicial-textos{
-  display: grid;
-  grid-template-areas: "text1 text2";
+.inicial-textos {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
-.item-texto1{
-  grid-area: "text1";
+.item-texto1 {
+  flex: 1;
   padding-right: 10px;
 }
-.item-texto2{
-  grid-area: "text2";
+.item-texto2 {
+  flex: 1;
   padding-left: 10px;
 }
 
-
+@media (min-width: 700px) {
+  .inicial-textos {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  }
+}
