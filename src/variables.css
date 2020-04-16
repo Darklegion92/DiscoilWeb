@@ -1,0 +1,32 @@
+:root {
+    --color-primario: #052096;
+    --color-secundario: white;
+    --color-terciario: #b9b9b6;
+    --fuente-principal: "Lato", sans-serif;
+  }
+
+.inicial{
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1rem 3rem 10rem;
+
+}
+.inicial-slider{
+   margin-top: 60px;
+  
+}
+.inicial-textos{
+  display: grid;
+  grid-template-areas: "text1 text2";
+  padding: 20px;
+}
+.item-texto1{
+  grid-area: "text1";
+  padding-right: 10px;
+}
+.item-texto2{
+  grid-area: "text2";
+  padding-left: 10px;
+}
+
+

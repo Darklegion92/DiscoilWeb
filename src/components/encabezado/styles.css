@@ -1,0 +1,12 @@
+.barra{
+    background-color: var( --color-primario);
+    padding: 0px 10px!important;
+    
+}
+
+.textoMarca{
+    color: var(--color-secundario)!important;
+    margin: 0px;
+    font-size: 35px!important;
+    font-weight: bold;
+}   
