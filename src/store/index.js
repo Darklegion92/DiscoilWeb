@@ -142,11 +142,23 @@ class ContextStore extends Component {
     carItems: [],
     imageSlider: [{
       urlSlider:"",
-      imgSlider:"static/img/01.jpg",
+      imgSlider:"static/img/1.png",
       nombreSlider:"ninguno1"
     },{
       urlSlider:"",
-      imgSlider:"static/img/02.jpg",
+      imgSlider:"static/img/2.png",
+      nombreSlider:"ninguno2"
+    },{
+      urlSlider:"",
+      imgSlider:"static/img/3.png",
+      nombreSlider:"ninguno2"
+    },{
+      urlSlider:"",
+      imgSlider:"static/img/4.png",
+      nombreSlider:"ninguno2"
+    },{
+      urlSlider:"",
+      imgSlider:"static/img/5.png",
       nombreSlider:"ninguno2"
     }],
     agrupaciones: [{
