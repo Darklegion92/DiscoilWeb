@@ -4,6 +4,19 @@
   --color-terciario: #b9b9b6;
   --fuente-principal: "Lato", sans-serif;
 }
+*{
+  font-family: var(--fuente-principal)!important;
+}
+a{
+  color: var(--color-secundario) !important;
+}
+a:hover{
+  color: var(--color-terciario) !important;
+}
+nav.navbar {
+  background-color: var(--color-primario);
+  justify-content: space-evenly;
+}
 
 .inicial {
   display: grid;

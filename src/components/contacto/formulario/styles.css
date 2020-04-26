@@ -1,0 +1,44 @@
+.formulario-1 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 50px;
+}
+.formulario-1 > .form-row {
+  background-color: var(--color-secundario);
+  font-size: 50px;
+  color: var(--color-primario);
+  font-weight: bold;
+}
+
+.formulario-1  > .btn-primary {
+  border-color: var(--color-primario) !important;
+  border-right: 0 !important;
+  border-left: 0 !important;
+  border-top: 0 !important;
+  border-radius: 0em !important;
+  border-width: 0.3em;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 10px;
+}
+.formulario-1 > .form-control {
+  margin-top: 10px;
+  background-color: var(--color-terciario) !important;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.formulario-1 > label {
+  margin: 1%;
+  font-size: 60px;
+  color: var(--color-primario);
+  font-weight: bold;
+}
+
+.formulario-1>.form-label{
+    background-color: var(--color-secundario);
+    font-size: 18px;
+    color: var(--color-primario);
+    font-weight: bold;
+}

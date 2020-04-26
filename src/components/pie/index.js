@@ -1,25 +1,40 @@
-import React, { Component } from 'react'
-import { FaFacebook,FaInstagram,FaWhatsapp } from "react-icons/fa"
-import {AiFillGoogleSquare} from 'react-icons/ai'
-import './styles.css'
+import React, { Component } from "react";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { Form, Button, Navbar, Nav, FormControl } from "react-bootstrap";
+import "./styles.css";
 export default class index extends Component {
-    render() {
-        const size = 40;
-        return (
-            <>
-            <div className="icons-redes">
-                <FaFacebook size ={size}/>
-                <FaInstagram size ={size}/>
-                <AiFillGoogleSquare size ={size}/>
-                <FaWhatsapp size ={size}/>
-            </div>
-            <h6 className = "textos-pie">
-                DIRECCION: XXXXXXXXXXXXXXXXX 
-                - TELEFONO XXXXXXX <br/>
-                <spam>EMPRESA 100% NORTESANTANDEREANA</spam><br/>
-                Copyright SOLTEC-Tecnología y Desarrollo
-            </h6>
-            </>
-        )
-    }
+  render() {
+    const { abrir } = this.props;
+    return (
+      <Navbar fixed="bottom">
+        <Navbar.Text>
+          JUAN GUILLERMO PATERNIA
+          <br />
+          DIRECCION XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX - TELEFONO XXXXXXX
+          <br />
+          EMPRESA 100% NORTESANTANDEREANA
+        </Navbar.Text>
+        <Nav>
+          <a href="#login">
+            <FaFacebook size="40" />
+          </a>
+          <a href="#login">
+            <FaInstagram size="40" />
+          </a>
+          <a href="#login">
+            <FaWhatsapp size="40" />
+          </a>
+        </Nav>
+        <Nav>
+          <Button onClick={abrir}>CONTACTANOS</Button>
+          <Button
+            target="_blank"
+            onClick="parent.location='https://www.google.com/maps/d/viewer?mid=1lkh--vDBnVTN19D3Lh2bxXZlQTg&ie=UTF8&t=m&source=embed&oe=UTF8&msa=0&ll=7.898795023149208%2C-72.50805827107706&z=20'"
+          >
+            VER MAPA
+          </Button>
+        </Nav>
+      </Navbar>
+    );
+  }
 }

@@ -168,10 +168,23 @@ $level2-left: 50px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top:10px ;
+    padding-top:80px ;
+    padding-bottom:50px ;
     cursor:pointer;
     background: white;
 }
 .text-cat{
     text-decoration: underline;
+}
+.img-thumbnail{
+    height: 200px!important;
+}
+
+.img-thumbnail:hover{
+    transform: scale(1.6);
+}
+.otrasmarcas{
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--fuente-principal);
 }

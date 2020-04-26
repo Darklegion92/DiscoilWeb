@@ -3,10 +3,15 @@
     padding: 0px 10px!important;
     
 }
-
 .textoMarca{
     color: var(--color-secundario)!important;
     margin: 0px;
     font-size: 35px!important;
     font-weight: bold;
-}   
+}
+.dropdown-menu{
+    background-color: var(--color-primario)!important;
+}
+.dropdown-menu:hover{
+    color: var(--color-primario)!important;
+}

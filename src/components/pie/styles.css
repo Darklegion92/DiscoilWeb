@@ -1,14 +1,27 @@
-.icons-redes{
-    display: flex;
-    background-color: var(--color-primario);
-    color:var(--color-secundario);
-    padding: 1% 35%;
-    justify-content: space-around;
+.navbar-light .navbar-text {
+  color: var(--color-secundario) !important;
+  text-align: right;
+
 }
-.textos-pie{
-    background-color: var(--color-primario);
-    color:var(--color-secundario);
-    text-align: center;
-    padding: 10px;
-    margin: 0;
+.navbar-nav {
+  flex: 2;
+  color: var(--color-secundario) !important;
+  justify-content: space-evenly;
+}
+
+.btn-primary:hover {
+  color: var(--color-secundario) !important;
+  background-color: var(--color-terciario) !important;
+  border-color: var(--color-primario) !important;
+}
+
+.btn-primary {
+  flex: 1;
+  max-width:200px;
+  font-weight: bold !important;
+  border-radius: 15px !important;
+  color: var(--color-primario) !important;
+  background-color: var(--color-secundario) !important;
+  border-color: var(--color-primario) !important;
+  
 }
