@@ -5,6 +5,7 @@ import Slider from "./components/slider";
 import Textos from "./components/textos";
 import Banner from "./components/banner";
 import Contacto from "./components/contacto";
+import ModalInicio from "./components/modalInicio";
 import ContactoFormulario from "./components/contacto/formulario";
 import Pie from "./components/pie";
 import SliderGrupos from "./components/sliderGrupos";
@@ -46,11 +47,12 @@ export default class App extends Component {
         <div>
           <Pie abrir={handleShow} />
         </div>
-        <Modal show={this.state.show} onHide={handleClose}>
+        <Modal show={this.state.show} onHide={handleClose} centered>
           <ContactoFormulario cerrar = {handleClose}/>
         </Modal>
-        <Modal show={this.state.showInfo} onHide={handleCloseInfo}>
-         <div><br/><br/><br/><br/><br/><br/>Lo que quieras que valla aca envialo</div>
+        <Modal show={this.state.showInfo} onHide={handleCloseInfo} centered>
+         <ModalInicio 
+         cerrar={handleCloseInfo}/>
         </Modal>
       </Fragment>
     );

@@ -1,0 +1,14 @@
+.tarjeta>.card{
+    border: 0px;
+}
+
+.tarjeta>.bg-light{
+    background-color: transparent!important;
+}
+
+.tarjeta>div>div>div{
+    border-bottom: solid;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5px;
+}
