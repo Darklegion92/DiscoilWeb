@@ -42,3 +42,24 @@
     color: var(--color-primario);
     font-weight: bold;
 }
+
+@media (max-width: 600px) {
+
+  .formulario-1 {
+    padding: 0px;
+  }
+
+  .formulario-1 > .form-row {
+    font-size: 40px;
+  }
+
+  .formulario {
+    max-width: 60%;
+  }
+
+  .formulario-1>.form-label{
+    font-size: 15px;
+    
+}
+
+}

@@ -14,7 +14,7 @@ import "./variables.css";
 export default class App extends Component {
   state = {
     show: false,
-    showInfo:true
+    showInfo: true,
   };
 
   render() {
@@ -28,15 +28,12 @@ export default class App extends Component {
           <Slider />
         </div>
         <div className="inicial-textos">
-          <div className="item-texto1">
-            <Textos />
-          </div>
-          <div className="item-texto2">
-            <Textos />
-          </div>
+          <Textos />
+          <Textos />
         </div>
         <div>
-          <SliderGrupos />
+          <SliderGrupos titulo="MARCA PROPIA" />
+          <SliderGrupos titulo="MULTIMARCAS" />
         </div>
         <div>
           <Banner />
@@ -48,11 +45,10 @@ export default class App extends Component {
           <Pie abrir={handleShow} />
         </div>
         <Modal show={this.state.show} onHide={handleClose} centered>
-          <ContactoFormulario cerrar = {handleClose}/>
+          <ContactoFormulario cerrar={handleClose} />
         </Modal>
         <Modal show={this.state.showInfo} onHide={handleCloseInfo} centered>
-         <ModalInicio 
-         cerrar={handleCloseInfo}/>
+          <ModalInicio cerrar={handleCloseInfo} />
         </Modal>
       </Fragment>
     );

@@ -4,9 +4,26 @@ import { MdPerson } from "react-icons/md";
 import "./styles.css";
 
 export default class index extends Component {
+  state = {
+    size: 0,
+  };
+  componentDidMount() {
+    window.addEventListener("capturar", this.capturar.bind(this));
+    this.capturar();
+  }
+
+  capturar() {
+    this.setState({ size: window.innerWidth });
+  }
+
   render() {
     return (
       <Navbar expand="lg" fixed="top" className="barra">
+        {this.state.size < 600 && (
+          <Nav.Link href="#link" visible={false}>
+            <MdPerson size={30} />
+          </Nav.Link>
+        )}
         <Navbar.Brand href="#home" className="textoMarca">
           DISCOIL
         </Navbar.Brand>
@@ -24,7 +41,9 @@ export default class index extends Component {
               <NavDropdown.Item href="#action/3.3">MOTORFULL</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="PRODUCTOS" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">LUBRICANTES</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">
+                LUBRICANTES
+              </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">GRASAS</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">FILTROS</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">SPA</NavDropdown.Item>
@@ -32,9 +51,11 @@ export default class index extends Component {
             </NavDropdown>
             <Nav.Link href="#link">PEDIDOS</Nav.Link>
             <Nav.Link href="#link">CONTACTO</Nav.Link>
-            <Nav.Link href="#link">
-              <MdPerson size={30} />
-            </Nav.Link>
+            {this.state.size >= 600 && (
+              <Nav.Link href="#link">
+                <MdPerson size={30} />
+              </Nav.Link>
+            )}
           </Form>
         </Navbar.Collapse>
       </Navbar>

@@ -3,6 +3,9 @@ import "./styles.css";
 import Formulario from "./formulario";
 import Mapa from "./mapa";
 export default class index extends Component {
+
+
+
   render() {
     const {enviar}= this.props
     return (

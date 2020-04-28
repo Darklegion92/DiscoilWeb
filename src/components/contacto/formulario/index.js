@@ -17,7 +17,7 @@ export default class index extends Component {
           ENVIAR
         </Button>
         <Form.Label>
-          COMUNICATE CON NOSOTROS <FiPhoneCall size="60" href="##" />
+          COMUNICATE CON NOSOTROS <FiPhoneCall size="40" href="##" />
         </Form.Label>
       </Form>
     );
