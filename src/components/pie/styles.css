@@ -39,13 +39,9 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    margin-left: 50px;
   }
   .navbar-light .navbar-text {
     font-size: 7px;
-  }
-  .btn-primary {
-    font-size: 3px;
   }
   .navbar>.navbar-nav{
     flex:1;
