@@ -49,4 +49,10 @@
     justify-content: center!important;
     padding: 15px;
   }
+  .modal-content {
+    width: 100%;
+  }
+  .btn-primary {
+    font-size: 15px;
+}
 }
