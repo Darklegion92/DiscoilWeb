@@ -2,12 +2,14 @@ import React, { Component } from "react";
 import { Navbar, Modal, Nav, NavDropdown } from "react-bootstrap";
 import { MdPerson } from "react-icons/md";
 import ModalSlider from "../sliderModal";
+import FormularioLogin from "../formularioLogin"
 import "./styles.css";
 
 export default class index extends Component {
   state = {
     size: 0,
     show: false,
+    showLogin:false
   };
   componentDidMount() {
     window.addEventListener("capturar", this.capturar.bind(this));
@@ -19,16 +21,20 @@ export default class index extends Component {
   }
 
   render() {
-    const handleClose = () => this.setState({ show: false });
+    const handleClose = () => this.setState({ show: false, showLogin:false });
 
     const handleShow = (e) => {
       this.setState({ show: true, titulo: e.currentTarget.name });
+    };
+
+    const loginShow = (e) => {
+      this.setState({ showLogin: true});
     };
     return (
       <Navbar collapseOnSelect expand="lg" fixed="top" className="barra">
         {this.state.size < 769 && (
           <Nav.Link href="#link" visible={false}>
-            <MdPerson size={30} />
+            <MdPerson size={30} onClick={loginShow}/>
           </Nav.Link>
         )}
         <Navbar.Brand href="#home" className="textoMarca">
@@ -96,13 +102,16 @@ export default class index extends Component {
 
             {this.state.size >= 769 && (
               <Nav.Link href="#link">
-                <MdPerson size={30} />
+                <MdPerson size={30} onClick={loginShow}/>
               </Nav.Link>
             )}
           </Nav>
         </Navbar.Collapse>
         <Modal show={this.state.show} onHide={handleClose} centered>
           <ModalSlider cerrar={handleClose} titulo={this.state.titulo} />
+        </Modal>
+        <Modal show={this.state.showLogin} onHide={handleClose} centered>
+          <FormularioLogin/>
         </Modal>
       </Navbar>
     );

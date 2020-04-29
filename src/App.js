@@ -3,7 +3,6 @@ import { Modal } from "react-bootstrap";
 import Encabezado from "./components/encabezado";
 import Slider from "./components/slider";
 import Textos from "./components/textos";
-import Banner from "./components/banner";
 import Contacto from "./components/contacto";
 import ModalInicio from "./components/modalInicio";
 import ContactoFormulario from "./components/contacto/formulario";
