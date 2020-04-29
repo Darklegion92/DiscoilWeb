@@ -19,27 +19,6 @@ class Mapa extends Component {
     return this.props.context.punteros !== nextProps.context.punteros;
   }
 
-  state = {
-    size: 0,
-  };
-  componentDidMount() {
-    window.addEventListener("capturar", this.capturar.bind(this));
-    this.capturar();
-  }
-
-  capturar() {
-    this.setState({ size: window.innerWidth });
-
-    if (this.state.size < 600) {
-      styles.wrapper = {
-        height: 200,
-        width: "100%",
-        margin: "0 auto",
-        display: "flex",
-      };
-    }
-  }
-
   myIcon = L.icon({
     iconUrl: "loc.png",
     iconSize: [30, 30],

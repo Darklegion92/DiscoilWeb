@@ -29,16 +29,56 @@
   background-color: var(--color-secundario) !important;
   border-color: var(--color-primario) !important;
 }
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
   .datos-redes {
-    flex:1;
+    flex:1.5;
     flex-direction: column;
-    justify-content: space-evenly;
+    border-right: solid 0.5px;
+    border-color: var(--color-secundario);
+    padding-right: 15px;
   }
   .datos-redes>.navbar-nav{
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: right;
+  }
+  .navbar-light .navbar-text {
+    font-size: 18px;
+  }
+  .navbar>.navbar-nav{
+    flex:1;
+    flex-direction: column!important;
+    justify-content: center!important;
+    padding: 15px;
+    padding-left: 35px;
+  }
+  .datos-redes>.navbar-nav>a{
+    margin-left: 15px!important;
+  }
+  .modal-content {
+    width: 100%!important;
+  }
+  .navbar-nav>.btn-primary {
+    font-size: 17px!important;
+    margin-bottom: 10px;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .datos-redes {
+    flex:2;
+    flex-direction: column;
+    border-right: solid 0.5px;
+    border-color: var(--color-secundario);
+    padding-right: 15px;
+  }
+  .datos-redes>.navbar-nav{
+    display: flex;
+    width: 100%;
+    justify-content: right;
   }
   .navbar-light .navbar-text {
     font-size: 7px;
@@ -48,11 +88,17 @@
     flex-direction: column!important;
     justify-content: center!important;
     padding: 15px;
+    padding-left: 35px;
+  }
+  .datos-redes>.navbar-nav>a{
+    margin-left: 5px!important;
   }
   .modal-content {
     width: 100%!important;
   }
-  .btn-primary {
-    font-size: 15px!important;
-}
+  .navbar-nav>.btn-primary {
+    font-size: 10px!important;
+    width: auto;
+    height: auto;
+  }
 }

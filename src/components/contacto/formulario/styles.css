@@ -46,11 +46,11 @@
 @media (max-width: 600px) {
 
   .formulario-1 {
-    padding: 0px;
+    padding: 5%;
   }
 
   .formulario-1 > .form-row {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .formulario {

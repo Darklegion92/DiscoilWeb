@@ -5,6 +5,7 @@ import "./styles.css";
 export default class index extends Component {
   state = {
     mobile: false,
+    size:40
   };
   componentDidMount() {
     window.addEventListener("capturar", this.capturar.bind(this));
@@ -12,8 +13,12 @@ export default class index extends Component {
   }
 
   capturar() {
-    if (window.innerWidth < 600) this.setState({ mobile: true });
-    else this.setState({ mobile: false });
+    if (window.innerWidth < 769) {
+      this.setState({ mobile: true,size:30 });
+    } else this.setState({ mobile: false });
+    if(window.innerWidth < 600){
+       this.setState({ mobile: true,size:20 });
+    }
   }
 
   render() {
@@ -47,13 +52,13 @@ export default class index extends Component {
           <div className="datos-redes"  >
             <Nav>
               <a href="#login">
-                <FaFacebook size="20" />
+                <FaFacebook size={this.state.size} />
               </a>
               <a href="#login">
-                <FaInstagram size="20" />
+                <FaInstagram size={this.state.size} />
               </a>
               <a href="#login">
-                <FaWhatsapp size="20" />
+                <FaWhatsapp size={this.state.size} />
               </a>
             </Nav>
             <Navbar.Text>
