@@ -74,7 +74,7 @@ export default class index extends Component {
           <Button onClick={abrir}>CONTACTANOS</Button>
           <Button
             target="_blank"
-            onClick="parent.location='https://www.google.com/maps/d/viewer?mid=1lkh--vDBnVTN19D3Lh2bxXZlQTg&ie=UTF8&t=m&source=embed&oe=UTF8&msa=0&ll=7.898795023149208%2C-72.50805827107706&z=20'"
+            href="https://www.google.com/maps/d/viewer?mid=1lkh--vDBnVTN19D3Lh2bxXZlQTg&ie=UTF8&t=m&source=embed&oe=UTF8&msa=0&ll=7.898795023149208%2C-72.50805827107706&z=20"
           >
             VER MAPA
           </Button>

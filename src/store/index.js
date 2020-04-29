@@ -141,25 +141,20 @@ class ContextStore extends Component {
     articulos: [],
     carItems: [],
     imageSlider: [{
-      urlSlider:"",
-      imgSlider:"static/img/1.png",
-      nombreSlider:"ninguno1"
+      original:"static/img/1.png",
+      thumbnail:"static/img/5.png"
     },{
-      urlSlider:"",
-      imgSlider:"static/img/2.png",
-      nombreSlider:"ninguno2"
+      original:"static/img/2.png",
+      thumbnail:"static/img/5.png"
     },{
-      urlSlider:"",
-      imgSlider:"static/img/3.png",
-      nombreSlider:"ninguno2"
+      original:"static/img/3.png",
+      thumbnail:"static/img/5.png"
     },{
-      urlSlider:"",
-      imgSlider:"static/img/4.png",
-      nombreSlider:"ninguno2"
+      original:"static/img/4.png",
+      thumbnail:"static/img/5.png"
     },{
-      urlSlider:"",
-      imgSlider:"static/img/5.png",
-      nombreSlider:"ninguno2"
+      original:"static/img/5.png",
+      thumbnail:"static/img/5.png"
     }],
     agrupaciones: [{
       nombreFamilia:"prueba",

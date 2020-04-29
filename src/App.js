@@ -36,7 +36,7 @@ export default class App extends Component {
           <SliderGrupos titulo="MULTIMARCAS" />
         </div>
         <div>
-          <Banner />
+          <Slider />
         </div>
         <div>
           <Contacto />

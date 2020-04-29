@@ -10,11 +10,9 @@ export default class index extends Component {
     return (
       <div className="modal-inicio">
         <div className="cerrar-modal">
-          <Button onClick={cerrar}>
-            <RiCloseLine/>
-          </Button>
+            <RiCloseLine onClick={cerrar}/>
         </div>
-        <div>
+        <div className="cuerpo">
           <FaTruck />
           <h1>DEBIDO A LAS RESTRICCIONES</h1>
           <h6>
@@ -22,7 +20,7 @@ export default class index extends Component {
             gracias
           </h6>
           <h4>PARA MAYOR INFORMACION COMUNICATE CON NOSOTROS</h4>
-          <Button>LLAMAR</Button>
+          <Button href="tel:+3144322665" onClick={cerrar}>LLAMAR</Button>
         </div>
       </div>
     );
